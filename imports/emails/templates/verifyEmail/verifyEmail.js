@@ -1,6 +1,9 @@
-import SSR from "meteor/meteorhacks:ssr";
+import { SSR } from "meteor/meteorhacks:ssr";
 
-SSR.compileTemplate("enrollAccount", Assets.getText("./enrollAccount.html"));
+SSR.compileTemplate(
+  "enrollAccount",
+  Assets.getText("emails/enrollAccount.html")
+);
 
 Accounts.emailTemplates.verifyEmail = {
   subject: () => "Activate your account now!",
