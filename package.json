@@ -15,7 +15,8 @@
     "@mui/material": "^5.6.1",
     "meteor-node-stubs": "^1.1.0",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "simpl-schema": "^1.12.0"
   },
   "meteor": {
     "mainModule": {
