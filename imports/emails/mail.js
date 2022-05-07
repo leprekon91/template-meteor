@@ -17,11 +17,3 @@ Accounts.urls.verifyEmail = (token) =>
 Accounts.emailTemplates.siteName = "Template";
 Accounts.emailTemplates.from = "Template - noreply <team@template>";
 
-Accounts.emailTemplates.verifyEmail = {
-  subject() {
-    return "Activate your account now!";
-  },
-  text(user, url) {
-    return `Hey ${user.username}! Thank you for joining us, and welcome to Template, Verify your e-mail by following this link: ${url}`;
-  },
-};
