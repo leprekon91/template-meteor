@@ -7,11 +7,6 @@ Meteor.startup(() => {
   }
 });
 
-Accounts.urls.resetPassword = (token) =>
-  Meteor.absoluteUrl(`reset-password/${token}`);
-
-Accounts.urls.verifyEmail = (token) =>
-  Meteor.absoluteUrl(`verify-email/${token}`);
 
 // Email Templates
 Accounts.emailTemplates.siteName = "Template";
